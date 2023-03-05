@@ -6,17 +6,17 @@
     <ul class="font-montserrat flex items-center">
       <li class="mx-3">
         <a class="growing-underline" href="https://github.com/jban-as" target="_blank">
-          <UiSvgIcon name="github" />
+          <UiSvgIcon name="github" title="GitHub" />
         </a>
       </li>
       <li class="mx-3">
-        <a class="growing-underline" href="https://facebook.com/banas.joven" target="_blank">
-          <UiSvgIcon name="facebook" />
+        <a class="growing-underline" href="https://linkedin.com/in/joven-ban-as" target="_blank">
+          <UiSvgIcon name="linkedin" title="LinkedIn" />
         </a>
       </li>
       <li class="mx-3">
         <a class="growing-underline" href="https://instagram.com/iamjovenb" target="_blank">
-          <UiSvgIcon name="instagram" />
+          <UiSvgIcon name="instagram" title="Instagram" />
         </a>
       </li>
     </ul>
