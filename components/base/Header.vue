@@ -1,48 +1,53 @@
 <template>
-  <header>
-    <div class="header-nav">
-      <div class="logo font-black text-xl">iamjovenb</div>
-      <div class="social-links">Social media links</div>
-      <div class="color-mode">Color mode:
-        <select v-model="$colorMode.preference">
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-          <option value="sepia">Sepia</option>
-        </select>
-      </div>
+  <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
+    <div class="flex items-center">
+      <span class="logo font-black text-xl">iamjovenb.</span>
     </div>
-  </header>
+    <ul class="font-montserrat flex items-center">
+      <li class="mx-3">
+        <a class="growing-underline" href="https://github.com/jban-as" target="_blank">
+          <UiSvgIcon name="github" />
+        </a>
+      </li>
+      <li class="mx-3">
+        <a class="growing-underline" href="https://facebook.com/banas.joven" target="_blank">
+          <UiSvgIcon name="facebook" />
+        </a>
+      </li>
+      <li class="mx-3">
+        <a class="growing-underline" href="https://instagram.com/iamjovenb" target="_blank">
+          <UiSvgIcon name="instagram" />
+        </a>
+      </li>
+    </ul>
+    <div class="font-montserrat block">
+      <UiSwitch v-model="isDarkMode">
+        <template #active>
+          <UiSvgIcon name="moon" class="w-5 h-5" />
+        </template>
+        <template #inactive>
+          <UiSvgIcon name="sun" class="w-5 h-5 text-yellow-500" />
+        </template>
+      </UiSwitch>
+    </div>
+  </nav>
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode()
-</script>
+import { ref } from 'vue'
 
-<style scoped>
-header {
-  position: fixed;
-  z-index: 5;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 6rem;
-  padding: 0px 1rem;
-  width: 100vw;
-  transition: background 0.45s ease 0s;
-  background: rgba(0, 0, 0, 0.725);
-  backdrop-filter: blur(4px);
-}
-.header-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 900px;
-  padding: 0 1.25rem;
-  margin: 0px auto;
-}
-</style>
+const colorMode = useColorMode()
+const isDarkMode = ref(false)
+
+onMounted(() => {
+  isDarkMode.value = colorMode.value === 'dark'
+})
+
+watch(isDarkMode, (newValue) => {
+  colorMode.preference = newValue ? 'dark' : 'light'
+})
+
+watch(colorMode, (newValue) => {
+  isDarkMode.value = newValue.preference === 'dark'
+})
+</script>
