@@ -9,7 +9,7 @@
       <div class="relative">
         <UiSvgIcon name="highlight1" class="absolute -top-16 -left-10" />
       </div>
-      <img src="~/assets/img/macbook.png" alt="Macbook">
+      <img src="~/assets/img/profile.webp" alt="Macbook">
       <div class="relative">
         <UiSvgIcon name="highlight2" class="absolute -bottom-10 -right-6" />
       </div>
