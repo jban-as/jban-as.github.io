@@ -18,6 +18,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Joven Ban-as | Web Developer'
+})
 </script>
 
 <style scoped>

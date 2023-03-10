@@ -5,17 +5,17 @@
     </div>
     <ul class="font-montserrat flex items-center">
       <li class="mx-3">
-        <a class="growing-underline" href="https://github.com/jban-as" target="_blank">
+        <a class="github" href="https://github.com/jban-as" target="_blank">
           <UiSvgIcon name="github" title="GitHub" />
         </a>
       </li>
       <li class="mx-3">
-        <a class="growing-underline" href="https://linkedin.com/in/joven-ban-as" target="_blank">
+        <a class="linkedin" href="https://linkedin.com/in/joven-ban-as" target="_blank">
           <UiSvgIcon name="linkedin" title="LinkedIn" />
         </a>
       </li>
       <li class="mx-3">
-        <a class="growing-underline" href="https://instagram.com/iamjovenb" target="_blank">
+        <a class="instagram" href="https://instagram.com/iamjovenb" target="_blank">
           <UiSvgIcon name="instagram" title="Instagram" />
         </a>
       </li>
@@ -51,3 +51,15 @@ watch(colorMode, (newValue) => {
   isDarkMode.value = newValue.preference === 'dark'
 })
 </script>
+
+<style>
+.github:hover svg * {
+  fill: #747474;
+}
+.linkedin:hover svg * {
+  fill: #0072b1;
+}
+.instagram:hover svg * {
+  fill: url(#instagram);
+}
+</style>
