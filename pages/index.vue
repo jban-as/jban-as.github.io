@@ -1,6 +1,6 @@
 <template>
   <section class="bg-secondary">
-    <div class="hero-main pt-24 md:h-screen md:mt-0 lg:px-48 md:px-12 px-4 flex flex-col-reverse justify-center text-center md:text-left md:flex-row md:justify-between md:items-center">
+    <div class="hero-main pt-24 pb-10 md:h-screen md:mt-0 lg:px-48 md:px-12 px-4 flex flex-col-reverse justify-center text-center md:text-left md:flex-row md:justify-between md:items-center">
       <div class="hero-text md:flex-1 md:mr-10 relative">
         <h2 class="text-4xl md:text-5xl font-extrabold mb-2">Hi, I'm Joven Ban-as <img src="~/assets/img/waving.png" alt="Waving Hand" class="w-12 ml-2 mb-2 inline-block md:absolute"></h2>
         <h3 class="text-2xl text-neutral-400 mb-5">Frontend Developer</h3>
