@@ -10,7 +10,7 @@
         <div class="profile-img relative h-80 w-80 bg-cover bg-center bg-no-repeat mb-5 md:mb-0 md:m-auto"></div>
       </div>
     </div>
-    <div class="skills flex items-center mt-20 flex-col md:flex-row">
+    <div class="skills flex items-center mt-10 md:mt-20 flex-col md:flex-row">
       <h3 class="text-lg leading-normal border-solid border-b-2 border-b-neutral-500 border-r-neutral-500 pb-2 mb-6 md:border-b-0 md:border-r-2 md:pb-0 md:mb-0 md:mr-16 md:pr-4">Tech Stack</h3>
       <div class="logos">
         <ul class="flex flex-wrap gap-6 list-none items-center justify-center">
