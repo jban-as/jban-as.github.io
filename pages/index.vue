@@ -39,6 +39,9 @@ const skills = ref([
 </script>
 
 <style scoped>
+.dark-mode .profile-img {
+  border: 3px solid rgb(163 163 163 / 1);
+}
 .profile-img {
   background-image: url("~/assets/img/profile.webp");
   border: 3px solid #2d2e32;
