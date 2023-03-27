@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
+  <nav :class="`fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10 ${sticky}`">
     <div class="flex items-center">
       <span class="logo font-black text-xl">jbanas.dev</span>
     </div>
@@ -38,9 +38,23 @@ import { ref } from 'vue'
 
 const colorMode = useColorMode()
 const isDarkMode = ref(false)
+const scrollPosition = ref(0);
+
+const updateScroll = () => {
+  scrollPosition.value = window.scrollY
+}
+
+const sticky = computed(() => {
+  return scrollPosition.value > 0 ? `${isDarkMode.value ? 'bg-slate-900 shadow-gray-800' : 'bg-white'} shadow-lg` : ''
+})
 
 onMounted(() => {
   isDarkMode.value = colorMode.value === 'dark'
+  window.addEventListener('scroll', updateScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', updateScroll)
 })
 
 watch(isDarkMode, (newValue) => {

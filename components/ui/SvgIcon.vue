@@ -1,10 +1,11 @@
 <template>
-  <span v-if="icon" v-html="icon" />
+  <span v-if="icon" v-html="icon" :title="title" />
 </template>
 
 <script setup lang="ts">
 const props = defineProps<{
-  name?: string
+  name?: string,
+  title?: string
 }>()
 
 // Auto-load icons
