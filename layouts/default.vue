@@ -5,13 +5,16 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 body {
   background-color: #fff;
   color: rgba(0,0,0,0.8);
+  font-family: $font-family;
 }
-.dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
+.dark-mode {
+  body {
+    background-color: #091a28;
+    color: #ebf4f1;
+  }
 }
 </style>

@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Thin';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Italic';
+  font-display: swap;
+  src: url('../fonts/Montserrat-Italic.ttf') format('truetype');
+}
