@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-secondary md:h-screen pb-6 px-4 pt-16 md:mt-0 lg:px-48 md:px-12 md:pt-40">
+  <section class="bg-secondary md:h-screen pb-8 px-4 pt-16 md:mt-0 lg:px-48 md:px-12 md:pt-40">
     <div class="hero-main flex flex-col-reverse justify-center text-center md:text-left md:flex-row md:justify-between md:items-center">
       <div class="hero-text md:flex-1 md:mr-10 relative">
         <h2 class="font-montserrat-bold text-4xl md:text-5xl font-extrabold mb-2">Hi, I'm Joven Ban-as <img src="~/assets/img/waving.png" alt="Waving Hand" class="w-12 ml-2 mb-2 inline-block md:absolute"></h2>
@@ -34,7 +34,7 @@ const skills = ref([
   { name: 'vue', title: 'Vue JS' },
   { name: 'react', title: 'React JS' },
   { name: 'tailwind', title: 'Tailwind CSS' },
-  { name: 'scss', title: 'Sass/Scss' }
+  { name: 'wordpress', title: 'WordPress' }
 ]);
 </script>
 
