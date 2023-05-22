@@ -23,9 +23,17 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
+import profile from '~/assets/img/profile.webp'
+
 useHead({
-  title: 'Joven Ban-as | Web Developer'
+  title: 'Joven Ban-as | Web Developer',
+  meta: [
+    { hid: 'description', name: 'description', content: 'Joven is passionate about web development and doing one code at a time.' },
+    { hid: 'og:title', property: 'og:title', content: 'Joven Ban-as | Web Developer' },
+    { hid: 'og:description', property: 'og:description', content: 'Joven is passionate about web development and doing one code at a time.' },
+    { hid: 'og:image', property: 'og:image', content: profile }
+  ]
 })
 const skills = ref([
   { name: 'html', title: 'HTML5' },
