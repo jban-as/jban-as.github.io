@@ -54,6 +54,7 @@ useHead({
     { hid: 'og:description', property: 'og:description', content: meta.description },
     { hid: 'og:image', property: 'og:image', content: meta.image },
     // twitter card
+    { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
     { hid: 'twitter:title', name: 'twitter:title', content: meta.title },
     { hid: 'twitter:url', name: 'twitter:url', content: meta.url },
     { hid: 'twitter:description', name: 'twitter:description', content: meta.description },
