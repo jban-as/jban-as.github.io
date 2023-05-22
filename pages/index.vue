@@ -29,8 +29,9 @@ import profile from '~/assets/img/profile.webp'
 useHead({
   title: 'Joven Ban-as | Web Developer',
   meta: [
-    { hid: 'description', name: 'description', content: 'Joven is passionate about web development and doing one code at a time.' },
     { hid: 'og:title', property: 'og:title', content: 'Joven Ban-as | Web Developer' },
+    { hid: 'og:type', property: 'og:type', content: 'website' },
+    { hid: 'og:url', property: 'og:url', content: 'https://jban-as.github.io' },
     { hid: 'og:description', property: 'og:description', content: 'Joven is passionate about web development and doing one code at a time.' },
     { hid: 'og:image', property: 'og:image', content: profile }
   ]
