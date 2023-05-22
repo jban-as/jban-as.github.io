@@ -26,16 +26,14 @@
 <script setup>
 import profile from '~/assets/img/profile.webp'
 
-useHead({
+const meta = reactive({
   title: 'Joven Ban-as | Web Developer',
-  meta: [
-    { hid: 'og:title', property: 'og:title', content: 'Joven Ban-as | Web Developer' },
-    { hid: 'og:type', property: 'og:type', content: 'website' },
-    { hid: 'og:url', property: 'og:url', content: 'https://jban-as.github.io' },
-    { hid: 'og:description', property: 'og:description', content: 'Joven is passionate about web development and doing one code at a time.' },
-    { hid: 'og:image', property: 'og:image', content: profile }
-  ]
+  type: 'website',
+  url: 'https://jban-as.github.io',
+  image: profile,
+  description: 'Joven is passionate about web development and doing one code at a time.'
 })
+
 const skills = ref([
   { name: 'html', title: 'HTML5' },
   { name: 'css3', title: 'CSS3' },
@@ -44,7 +42,24 @@ const skills = ref([
   { name: 'react', title: 'React JS' },
   { name: 'tailwind', title: 'Tailwind CSS' },
   { name: 'wordpress', title: 'WordPress' }
-]);
+])
+
+useHead({
+  title: meta.title,
+  meta: [
+    { hid: 'description', name: 'description', content: meta.description },
+    { hid: 'og:title', property: 'og:title', content: meta.title },
+    { hid: 'og:type', property: 'og:type', content: meta.type },
+    { hid: 'og:url', property: 'og:url', content: meta.url },
+    { hid: 'og:description', property: 'og:description', content: meta.description },
+    { hid: 'og:image', property: 'og:image', content: meta.image },
+    // twitter card
+    { hid: 'twitter:title', name: 'twitter:title', content: meta.title },
+    { hid: 'twitter:url', name: 'twitter:url', content: meta.url },
+    { hid: 'twitter:description', name: 'twitter:description', content: meta.description },
+    { hid: 'twitter:image', name: 'twitter:image', content: meta.image },
+  ]
+})
 </script>
 
 <style lang="scss" scoped>
