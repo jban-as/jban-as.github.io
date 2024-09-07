@@ -65,7 +65,7 @@ useHead({
 
 <style lang="scss" scoped>
 .profile-img {
-  background-image: url("~/assets/img/profile.webp");
+  background-image: url("~/assets/img/profile.png");
   border: 3px solid #2d2e32;
   animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
