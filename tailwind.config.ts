@@ -19,5 +19,6 @@ module.exports = {
       'montserrat-italic': ['Montserrat-Italic']
     }
   },
+  darkMode: 'class',
   plugins: []
 }

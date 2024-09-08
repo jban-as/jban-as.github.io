@@ -4,7 +4,7 @@
       <!-- toggle -->
       <div class="relative">
         <!-- input -->
-        <input type="checkbox" id="switch" class="sr-only" v-model="model" :value="value">
+        <input type="checkbox" id="switch" class="sr-only" v-model="model" :value="value" aria-label="Switch">
         <!-- line -->
         <div class="block bg-gray-600 w-12 h-7 rounded-full"></div>
         <!-- dot -->

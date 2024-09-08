@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss'
   ],
+  colorMode: {
+    classSuffix: ''
+  },
   vite: {
     plugins: [
       svgLoader()

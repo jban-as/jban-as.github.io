@@ -5,17 +5,17 @@
     </div>
     <ul class="font-montserrat flex items-center">
       <li class="mx-3">
-        <a class="github" href="https://github.com/jban-as" target="_blank">
+        <a class="github" href="https://github.com/jban-as" target="_blank" aria-label="GitHub">
           <UiSvgIcon name="github" title="GitHub" />
         </a>
       </li>
       <li class="mx-3">
-        <a class="linkedin" href="https://linkedin.com/in/joven-ban-as" target="_blank">
+        <a class="linkedin" href="https://linkedin.com/in/joven-ban-as" target="_blank" aria-label="LinkedIn">
           <UiSvgIcon name="linkedin" title="LinkedIn" />
         </a>
       </li>
       <li class="mx-3">
-        <a class="instagram" href="https://instagram.com/iamjovenb" target="_blank">
+        <a class="instagram" href="https://instagram.com/iamjovenb" target="_blank" aria-label="Instagram">
           <UiSvgIcon name="instagram" title="Instagram" />
         </a>
       </li>
