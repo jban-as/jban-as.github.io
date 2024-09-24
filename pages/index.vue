@@ -2,7 +2,7 @@
   <section class="bg-secondary md:h-screen pb-8 px-4 pt-16 md:mt-0 lg:px-48 md:px-12 md:pt-40">
     <div class="hero-main flex flex-col-reverse justify-center text-center md:text-left md:flex-row md:justify-between md:items-center">
       <div class="hero-text md:flex-1 md:mr-10 relative">
-        <h2 class="font-montserrat-bold text-4xl md:text-5xl font-extrabold mb-2">Hello, I'm Joven Ban-as <img src="~/assets/img/waving.png" alt="Waving Hand" class="w-12 ml-2 mb-2 inline-block md:absolute"></h2>
+        <h2 class="font-montserrat-bold text-4xl md:text-5xl font-extrabold mb-2">Hi, I'm Joven Ban-as <img src="~/assets/img/waving.png" alt="Waving Hand" class="w-12 ml-2 mb-2 inline-block md:absolute"></h2>
         <h3 class="font-montserrat-medium text-2xl text-neutral-600 dark:text-neutral-400 mb-5">Web Developer</h3>
         <p class="font-montserrat-medium">I am a self-taught web developer with a strong eye for innovative design and a keen understanding of techniques geared toward optimum user experience.</p>
       </div>
