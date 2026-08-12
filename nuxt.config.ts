@@ -1,6 +1,7 @@
 import svgLoader from 'vite-svg-loader'
 
 export default defineNuxtConfig({
+  compatibilityDate: '2026-08-13',
   modules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss'
